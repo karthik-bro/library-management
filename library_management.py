@@ -1,3 +1,4 @@
+
 import sqlite3
 from datetime import datetime
 
@@ -148,5 +149,3 @@ while True:
 
     elif choice == "3":
         break
-
-conn.close()
