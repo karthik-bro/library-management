@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, redirect
 from datetime import datetime
 import sqlite3
+import bcrypt
 
 app = Flask(__name__)
 
@@ -16,17 +17,14 @@ def login():
         conn = get_db()
         cursor = conn.cursor()
 
-        cursor.execute("SELECT * FROM users WHERE username=? AND password=?",
-                       (username, password))
+        cursor.execute("SELECT * FROM users WHERE username=?", (username,))
         user = cursor.fetchone()
 
-        if user:
+        if user and bcrypt.checkpw(password.encode('utf-8'), user[2]):
             return redirect("/dashboard")
         else:
             return "Invalid Credentials "
-
-    return render_template("login.html")
-
+        
 @app.route("/dashboard")
 def dashboard():
     return render_template("dashboard.html")
@@ -100,11 +98,14 @@ def register():
         username = request.form["username"]
         password = request.form["password"]
 
+        # hash password
+        hashed = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
+
         conn = get_db()
         cursor = conn.cursor()
 
         cursor.execute("INSERT INTO users(username, password) VALUES(?, ?)",
-                       (username, password))
+                       (username, hashed))
         conn.commit()
 
         return redirect("/")
