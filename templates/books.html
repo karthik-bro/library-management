@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Books</title>
+</head>
+<body>
+
+<h2> Books List</h2>
+
+{% for book in books %}
+    <p>
+        {{ book[0] }} - {{ book[1] }} - 
+        {{ "Available" if book[3] == 1 else "Issued" }}
+
+        {% if book[3] == 1 %}
+            <a href="/issue/{{ book[0] }}">Issue</a>
+        {% else %}
+            <a href="/return/{{ book[0] }}">Return</a>
+        {% endif %}
+    </p>
+{% endfor %}
+
+<br>
+<a href="/dashboard">Back</a>
+
+</body>
+</html>
