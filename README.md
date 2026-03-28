@@ -1,22 +1,23 @@
-📚 Library Management System (Web App)
+# Library Management System (Web App)
 
-🚀 A full-stack Library Management System built using Python (Flask) + SQLite + HTML + Bootstrap, supporting authentication, book tracking, and real-time issue/return operations.
+ A full-stack Library Management System built using Python (Flask) + SQLite + HTML + Bootstrap, supporting authentication, book tracking, and real-time issue/return operations.
+YOU CAN VIEW WORKING DEMO BY USING THIS BELOW LINK
+https://library-management-1-e809.onrender.com
+---
+
+# Features
+
+-  User Registration & Login
+-  Add & View Books (Web Interface)
+-  Issue Books
+-  Return Books with Date Tracking
+-  Book Availability Status (Available / Issued)
+-  Web-based UI using Flask
+-  Responsive Design with Bootstrap
 
 ---
 
-🌟 Features
-
-- 🔐 User Registration & Login
-- 📚 Add & View Books (Web Interface)
-- 📖 Issue Books
-- 🔄 Return Books with Date Tracking
-- ✅ Book Availability Status (Available / Issued)
-- 🌐 Web-based UI using Flask
-- 🎨 Responsive Design with Bootstrap
-
----
-
-🏗 System Architecture
+# System Architecture
 
 Frontend (HTML + Bootstrap)
         ↓
@@ -25,19 +26,18 @@ Flask (Python Backend)
 SQLite Database
 
 ---
-
-🛠 Tech Stack
+# Tech Stack
 
 Technology| Usage
-Python 🐍| Backend Logic
-Flask 🌐| Web Framework
-SQLite 🗄| Database
+Python | Backend Logic
+Flask | Web Framework
+SQLite | Database
 HTML| Frontend
-Bootstrap 🎨| UI Styling
+Bootstrap | UI Styling
 
 ---
 
-📂 Project Structure
+# Project Structure
 
 library-management-system/
 │
@@ -54,7 +54,7 @@ library-management-system/
 
 ---
 
-⚙️ Installation & Setup
+# Installation & Setup
 
 1️⃣ Clone the repository
 
@@ -74,11 +74,11 @@ python app.py
 
 ---
 
-🌐 Usage
+# Usage
 
 1. Open browser:
-
-https://library-management-1-e809.onrender.com
+(with local host as)
+http://127.0.0.1:5000/
 
 2. Login with your credentials
 
@@ -91,18 +91,18 @@ https://library-management-1-e809.onrender.com
 
 ---
 
-📊 Key Features Explained
+# Key Features Explained
 
-🔐 Authentication
+ Authentication
 
 - Validates user credentials from database
 
-📚 Book Management
+ Book Management
 
 - Add books through web form
 - View all books in table format
 
-📖 Issue / Return System
+ Issue / Return System
 
 - Issue → Marks book as unavailable
 - Return → Marks book as available
@@ -110,7 +110,7 @@ https://library-management-1-e809.onrender.com
 
 ---
 
-🎨 UI Features
+# UI Features
 
 - Clean dashboard
 - Table-based book listing
@@ -120,32 +120,33 @@ https://library-management-1-e809.onrender.com
 
 ---
 
-🔥 Future Enhancements
+# Future Enhancements
 
-- 🔐 Password Hashing
-- 💰 Fine Calculation System
-- 🔍 Search Functionality
-- 📊 Analytics Dashboard
-- 🌍 Deployment (Render / Railway / Vercel)
-
----
-
-👨‍💻 Author
-
-Karthik G
+-  Password Hashing
+-  Fine Calculation System
+-  Search Functionality
+-  Analytics Dashboard
+-  Deployment (Render / Railway / Vercel)
 
 ---
 
-⭐ Support
+# Author
+
+Karthik 
+CSE student at VTU Mysore.
+
+---
+
+# Support
 
 If you like this project:
 
-- ⭐ Star the repo
-- 🍴 Fork it
-- 📢 Share it
+-  Star the repo
+-  Fork it
+-  Share it
 
 ---
 
-📄 License
+ License
 
 This project is licensed under the MIT License.
