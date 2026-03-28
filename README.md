@@ -78,7 +78,7 @@ python app.py
 
 1. Open browser:
 
-http://127.0.0.1:5000/
+https://library-management-1-e809.onrender.com
 
 2. Login with your credentials
 
