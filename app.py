@@ -94,5 +94,22 @@ def return_book(book_id):
 
     return redirect("/books")
 
+@app.route("/register", methods=["GET", "POST"])
+def register():
+    if request.method == "POST":
+        username = request.form["username"]
+        password = request.form["password"]
+
+        conn = get_db()
+        cursor = conn.cursor()
+
+        cursor.execute("INSERT INTO users(username, password) VALUES(?, ?)",
+                       (username, password))
+        conn.commit()
+
+        return redirect("/")
+
+    return render_template("register.html")
+
 if __name__ == "__main__":
     app.run(debug=True)
