@@ -68,7 +68,7 @@ cd library-management
 
 pip install flask
 
-4️⃣ Run the application
+4️ Run the application
 
 python app.py
 
