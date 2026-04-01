@@ -56,7 +56,7 @@ library-management-system/
 
 # Installation & Setup
 
-1️⃣ Clone the repository
+1️ Clone the repository
 
 git clone https://github.com/karthik-bro/library-management.git
 
