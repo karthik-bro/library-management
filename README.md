@@ -60,7 +60,7 @@ library-management-system/
 
 git clone https://github.com/karthik-bro/library-management.git
 
-2️⃣ Navigate to project folder
+2️ Navigate to project folder
 
 cd library-management
 
