@@ -64,7 +64,7 @@ git clone https://github.com/karthik-bro/library-management.git
 
 cd library-management
 
-3️⃣ Install dependencies
+3️ Install dependencies
 
 pip install flask
 
